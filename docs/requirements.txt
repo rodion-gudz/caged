@@ -1,0 +1,8 @@
+sphinx-intl
+typing-extensions
+Sphinx-Substitution-Extensions
+m2r
+furo
+sphinx-prompt
+sphinx_copybutton
+m2r2

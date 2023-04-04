@@ -1,0 +1,18 @@
+
+rules:
+  - id: shady-links
+    message: This package contains an URL to a domain with a suspicious extension
+    metadata:
+      description: Identify when a package contains an URL to a domain with a suspicious extension
+    patterns:
+
+      - pattern-not-regex: \# .*
+
+      - pattern-either:
+          - pattern-regex: (http[s]?:\/\/bit\.ly.*)$
+          - pattern-regex: (http[s]?:\/\/.*\.(link|xyz|tk|ml|ga|cf|gq|pw|top|club|mw|bd|ke|am|sbs|date|quest|cd|bid|cd|ws|icu|cam|uno|email|stream))$
+          - pattern-regex: (http[s]?:\/\/.*\.(link|xyz|tk|ml|ga|cf|gq|pw|top|club|mw|bd|ke|am|sbs|date|quest|cd|bid|cd|ws|icu|cam|uno|email|stream)\/)
+    languages:
+      - python
+      - javascript
+    severity: WARNING
