@@ -5,7 +5,7 @@
 ## Установка
 
 ```shell
-pip install caged
+pip install cagged
 ```
 
 ## Использование
